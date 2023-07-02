@@ -1,3 +1,3 @@
 # rsschool-cv
 
-https://raw.githubusercontent.com/Ursa1337/rsschool-cv/gh-pages/cv.md
+https://ursa1337.github.io/rsschool-cv/cv
