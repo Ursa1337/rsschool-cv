@@ -1,3 +1,6 @@
+# About Me
+I can communicate in a team, solve problems quickly, learn something new. My goal is to learn javascript for backend and frontend development. My priority is to learn English
+
 # Skills
 * HTML, CSS
 * Javascript
