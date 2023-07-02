@@ -1,3 +1,9 @@
+# Contacts
+* Full name: Igor Zavirukhin
+* E-mail: mrertert@gmail.com
+* Github: [@Ursa1337](https://github.com/Ursa1337)
+* Phone: [+375445811602](tel:375445811602)
+
 # About Me
 I can communicate in a team, solve problems quickly, learn something new. My goal is to learn javascript for backend and frontend development. My priority is to learn English
 
