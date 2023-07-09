@@ -77,6 +77,15 @@ header {
   padding: 0px 0px 0px 8px;
 }
 
+.links-social > ul > li {
+  display: flex;
+}
+
+.links-social > ul > li > img {
+  margin: 0px 8px 0px 0px;
+  height: 16px;
+}
+
 .main-block {
   margin: 0px 0px 8px 0px;
   display: flex;
@@ -111,6 +120,7 @@ header {
 .code-example > pre {
   margin: 0px;
   overflow: auto;
+  padding: 0px 0px 8px 0px;
 }
 
 .lang {
@@ -159,7 +169,7 @@ footer {
   }
 
   .links-social {
-    width: 128px;
+    width: 144px;
     margin: unset;
   }
 
