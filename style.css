@@ -12,6 +12,7 @@ body {
   font-family: sans-serif;
   box-sizing: border-box;
   padding: 64px;
+  min-width: 320px;
 }
 
 h4 {
@@ -35,7 +36,7 @@ a:hover {
 }
 
 li {
-  margin-top: 8px;
+  margin: 8px 0px 0px 0px;
 }
 
 header > nav {
@@ -54,7 +55,7 @@ header > h1 {
 }
 
 header {
-  margin-bottom: 8px;
+  margin: 0px 0px 8px;
   padding: 0px 4px;
 }
 
@@ -66,17 +67,29 @@ header {
   margin: 0;
 }
 
+.links-cv > li {
+  padding: 8px;
+}
+
 .links-social > ul {
   margin: 0px;
   list-style-type: none;
   padding: 0px 0px 0px 8px;
 }
 
+.links-social > ul > li {
+  display: flex;
+}
+
+.links-social > ul > li > img {
+  margin: 0px 8px 0px 0px;
+  height: 16px;
+}
+
 .main-block {
   margin: 0px 0px 8px 0px;
   display: flex;
   align-items: center;
-  overflow: auto;
 }
 
 .main-block > img {
@@ -101,13 +114,19 @@ header {
 }
 
 .code-example {
-  overflow-x: auto;
   margin: 0px 0px 8px 0px;
 }
 
 .code-example > pre {
   margin: 0px;
   overflow: auto;
+  padding: 16px;
+  background: #f6f8fa;
+  border-radius: 8px;
+}
+
+.code-example > pre > code {
+  font-size: 14px;
 }
 
 .lang {
@@ -120,16 +139,12 @@ header {
   margin: 0px 0px 8px 0px;
 }
 
-.courses > ul {
-  overflow: auto;
-}
-
 .lang > ul, .skills > ul {
   margin: 0px;
   list-style-type: disc;
-  padding: revert;
+  padding: 0px 0px 8px 40px;
   overflow: auto;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 
 footer {
@@ -160,7 +175,7 @@ footer {
   }
 
   .links-social {
-    width: 128px;
+    width: 144px;
     margin: unset;
   }
 
@@ -182,5 +197,11 @@ footer {
   .courses {
     flex: 1;
     margin: 0px 0px 0px 8px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    padding: 32px;
   }
 }
