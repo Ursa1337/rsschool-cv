@@ -120,7 +120,13 @@ header {
 .code-example > pre {
   margin: 0px;
   overflow: auto;
-  padding: 0px 0px 8px 0px;
+  padding: 16px;
+  background: #f6f8fa;
+  border-radius: 8px;
+}
+
+.code-example > pre > code {
+  font-size: 14px;
 }
 
 .lang {
