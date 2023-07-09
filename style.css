@@ -188,3 +188,9 @@ footer {
     margin: 0px 0px 0px 8px;
   }
 }
+
+@media screen and (max-width: 425px) {
+  body {
+    padding: 32px;
+  }
+}
