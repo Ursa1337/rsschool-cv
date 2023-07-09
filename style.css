@@ -160,6 +160,8 @@ footer {
 }
 
 .courses {
+  display: flex;
+  flex-direction: column;
   flex: 1;
   margin: 0px 0px 8px 0px;
 }
