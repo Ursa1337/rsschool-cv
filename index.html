@@ -3,8 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <title>CV</title>
 </head>
 <body>
+  <header>
+    <h1>CV</h1>
+    <nav>
+      <ul class="links-cv">
+        <li>
+          <a href="#links">Links</a>
+        </li>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#example">Example</a>
+        </li>
+        <li>
+          <a href="#languages">Languages</a>
+        </li>
+        <li>
+          <a href="#courses">Courses</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="box-style main-block">
+      <img src="https://avatars.githubusercontent.com/u/53475450" alt="Name">
+      <h4>Igor Zavirukhin</h4>
+    </div>
+    <div class="wrapper-social-about">
+      <div id="links" class="box-style links-social">
+        <h2>Links</h2>
+        <ul>
+          <li>
+            <a href="mailto:mrertert@gmail.com">Email</a>
+          </li>
+          <li>
+            <a href="https://github.com/Ursa1337">Github</a>
+          </li>
+          <li>
+            <a href="tel:375445811602">Phone</a>
+          </li>
+        </ul>
+      </div>
+      <div id="about" class="box-style about">
+        <h2>About</h2>
+        <div>I can communicate in a team, solve problems quickly, learn something new. My goal is to learn javascript for backend and frontend development. My priority is to learn English</div>
+      </div>
+    </div>
+    <div class="box-style skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS</li>
+        <li>
+          <span>Javascript</span>
+          <ul>
+            <li>React</li>
+            <li>Redux</li>
+            <li>NestJS (microservices)</li>
+            <li>NextJS (SPA, SSR)</li>
+            <li>Sequelize</li>
+            <li>Aws-sdk (s3)</li>
+            <li>Mongoose</li>
+          </ul>
+        </li>
+        <li>C (basic)</li>
+        <li>Python (basic)</li>
+        <li>RabbitMQ</li>
+        <li>PostgreSQL</li>
+        <li>MongoDB</li>
+        <li>S3</li>
+        <li>Docker</li>
+      </ul>
+    </div>
+    <div id="example" class="box-style code-example">
+      <h2>Example</h2>
+      <pre>
+        <code>class FileJPEGSizeValidator extends FileValidator&lt;ImageSizeType&gt; {
+            buildErrorMessage(): string {
+              return `Validation failed (expected width ${this.validationOptions.height}px and height ${this.validationOptions.width}px)`
+            }
+          
+            isValid(file: any): boolean {
+              //SOF part include width and height image. SOF start from FF C0.
+              //height contains SOF + 4 offset, width contains SOF + 6 offset.
+              const index = file.buffer.indexOf('ffc0', 0, 'hex')
+              if (index) {
+                const bufferHeight = file.buffer.slice(index + 5, index + 7)
+                const bufferWidth = file.buffer.slice(index + 7, index + 9)
+                if (
+                  Buffer.byteLength(bufferHeight) === 2 &&
+                  Buffer.byteLength(bufferWidth) === 2 &&
+                  bufferHeight.readUInt16BE(0) === this.validationOptions.height &&
+                  bufferWidth.readUInt16BE(0) === this.validationOptions.width
+                ) {
+                  return true
+                }
+              }
+            }
+          }</code>
+      </pre>
+    </div>
+    <div class="lang-courses-wrapper">
+      <div id="languages" class="box-style lang">
+        <h2>Languages</h2>
+        <ul>
+          <li>Russian - Native</li>
+          <li>English - A2</li>
+        </ul>
+      </div>
+      <div id="courses" class="box-style courses">
+        <h2>Courses</h2>
+        <ul>
+          <li>
+            <a href="https://rs.school/js/">Javascript (in progress)</a>
+          </li>
+          <li>
+            <a href="https://www.udemy.com/course/webdeveloper/">HTML/CSS/JS</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="projects" class="box-style projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <a href="https://ursa1337.github.io/rsschool-cv/">CV</a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="box-style">
+    <span>2023</span>
+    <a href="https://rs.school/js/">
+      <img class="course-logo" src="https://rs.school/images/rs_school_js.svg" alt="logo">
+    </a>
+  </footer>
 </body>
 </html>
