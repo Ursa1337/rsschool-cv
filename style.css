@@ -170,6 +170,27 @@ footer {
   margin: 0px 0px 8px 0px;
 }
 
+footer > ul {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+footer > ul > li:first-child {
+  margin: 0px 8px 0px 0px;
+}
+
+footer > ul > li {
+  margin: 0px;
+}
+
+footer > ul > li > a > img {
+  height: 24px;
+}
+
 @media screen and (min-width: 768px) {
   .wrapper-social-about {
     display: flex;
@@ -183,7 +204,7 @@ footer {
 
   .about {
     flex: 1;
-    margin: 0px 0px 0px 8px;
+    margin: 0px 0px 0px 16px;
   }
 
   .lang-courses-wrapper {
